@@ -1,5 +1,64 @@
-@import "foundation";
-
 body {
-  background: #e2ebf3;
+  background: #DBDBDB;
 }
+
+.container {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.background {
+  position: relative;
+  min-width: 900px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.aboutimage {
+  width: 100%;
+}
+
+.aboutme {
+  background: #1D1D1D;
+  opacity: 0.8;
+  color: #DBDBDB;
+  width: 40%;
+  height: 400px;
+  overflow: scroll;
+  position: absolute;
+  bottom: 40px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 1.2em;
+  margin-left: 20px;
+  padding: 20px;
+  text-align: left;
+  hr {
+    border-color: #7A7A7A;
+    opacity: 0.1;
+  }
+}
+
+.abouttext {
+  a {
+    text-decoration: underline;
+    color: #7A7A7A;
+  }
+  a:hover {
+    color: white;
+  }
+}
+
+.mediaicons {
+  position: absolute;
+  bottom: 80px;
+  left: 40px;
+  word-spacing: 0.3em;
+  a {
+    color: #7A7A7A;
+  }
+  a:hover {
+    color: white;
+  }
+}
+
