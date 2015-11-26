@@ -3,8 +3,15 @@ body {
   background: #DBDBDB;
 }
 
-.outer-container {
+hr {
+  opacity: 0.2;
+  width: 50%;
+}
 
+.container {
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
 }
 
 .nav {
@@ -37,9 +44,10 @@ body {
   img {
    width: 100px;
    border-bottom: 3px solid lighten(#DBDBDB, 8%);
+   transition: border-bottom 0.4s ease;
   }
   img:hover {
-    border-bottom: 3px solid #B0261F;
+    border-bottom: 3px solid #DBDBDB;
   }
 }
 
@@ -70,8 +78,93 @@ ul {
   }
 }
 
+.homelinks {
+  margin: 80px auto;
+  width: 900px;
+  a {
+    text-decoration: none;
+  }
+}
 
-.container {
+.info {
+  background: url(../images/texture.png);
+  min-width: 900px;
+  max-width: 100%;
+  height: 300px;
+  .socialblock {
+    padding-top: 80px;
+  }
+  a {
+    text-decoration: none;
+    color: #EFEFEF;
+  }
+  span {
+    color: #EFEFEF;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 1.1em;
+  }
+  i {
+    padding: 5px;
+    transition: color 0.4s ease;
+  }
+  i:hover {
+    color: lighten(#EFEFEF, 30%);
+  }
+  .info_location {
+    margin-right: 10px;
+  }
+  .info_email {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .info_phone {
+    margin-left: 10px;
+  }
+}
+
+.art {
+  margin-right: 20px;
+  width: 350px;
+  height: 450px;
+  border: 15px solid #EFEFEF;
+  transition: border 0.4s ease;
+  display: inline-block;
+  text-align: left;
+  // background: url(../images/visualart.png);
+  // background-repeat: no-repeat;
+  // background-position: 20px 40px;
+  img {
+    padding-top: 40px;
+    padding-left: 20px;
+  }
+}
+.art:hover {
+  background: url(../images/visualart_bg.png);
+  border: 15px solid lighten(#EFEFEF, 5%);
+  box-shadow: 0px 0px 5px lighten(#EFEFEF, 5%);
+}
+
+.web {
+  margin-left: 20px;
+  width: 350px;
+  height: 450px;
+  border: 15px solid #EFEFEF;
+  transition: border 0.4s ease;
+  display: inline-block;
+  text-align: left;
+  // background: url(../images/webdev.png);
+  // background-repeat: no-repeat;
+  // background-position: 20px 40px;
+  img {
+    padding-top: 40px;
+    padding-left: 20px;
+  }
+}
+.web:hover {
+  background: url(../images/webdev_bg.png);
+  border: 15px solid lighten(#EFEFEF, 5%);
+  box-shadow: 0px 0px 5px lighten(#EFEFEF, 5%);
 }
 
 .background {
