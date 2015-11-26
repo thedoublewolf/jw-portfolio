@@ -26,23 +26,30 @@ var config = function config($stateProvider, $urlRouterProvider) {
     templateUrl: 'templates/app-layout/layout.tpl.html'
   }).state('root.home', {
     url: '/',
-    controller: 'HomeController as vm',
+    // controller: 'HomeController as vm',
     templateUrl: 'templates/app-layout/home.tpl.html'
-  }).state('root.portfolio', {
-    url: '/portfolio',
-    controller: 'PortfolioController as vm',
-    templateUrl: 'templates/app-content/portfolio.tpl.html'
-  }).state('root.singlePage', {
-    url: '/portfolio/:id',
-    controller: 'SinglePageController as vm',
-    templateUrl: 'templates/app-content/single-page.tpl.html'
-  }).state('root.about', {
-    url: '/about',
-    controller: 'AboutController as vm',
-    templateUrl: 'templates/app-content/about.tpl.html'
+  }).state('root.art-portfolio', {
+    url: '/art-portfolio',
+    templateUrl: 'templates/app-content/art-portfolio.tpl.html'
+  }).state('root.web-portfolio', {
+    url: '/web-portfolio',
+    templateUrl: 'templates/app-content/web-portfolio.tpl.html'
+  })
+  // .state('root.singlePage', {
+  //   url:'/portfolio/:id',
+  //   controller: 'SinglePageController as vm',
+  //   templateUrl: 'templates/app-content/single-page.tpl.html'
+  // })
+  .state('root.art-about', {
+    url: '/art-about',
+    // controller: 'AboutController as vm',
+    templateUrl: 'templates/app-content/art-about.tpl.html'
+  }).state('root.web-about', {
+    url: '/web-about',
+    templateUrl: 'templates/app-content/web-about.tpl.html'
   }).state('root.contact', {
     url: '/contact',
-    controller: 'ContactController as vm',
+    // controller: 'ContactController as vm',
     templateUrl: 'templates/app-content/contact.tpl.html'
   });
 };
@@ -63,8 +70,8 @@ exports['default'] = {
   URL: 'https://api.parse.com/1/',
   CONFIG: {
     headers: {
-      'X-Parse-Application-Id': '1udN2ysHJYvJkbsdti0c0Aii3ujOW0SJpJ96ra1C',
-      'X-Parse-REST-API-Key': 'nDsF9sFyF5z6zPJUHf2lYwuNRDuSvepcd4Jbms2i'
+      'X-Parse-Application-Id': '0VR7huIQPagbXx3vyqPROwxpSZgVYW4KvxHpI8Ml',
+      'X-Parse-REST-API-Key': 'LDbcDCCHDGaBtep4EfndEuWHrLXLFccN8HT5cPKR'
     }
   }
 
