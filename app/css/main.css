@@ -49,7 +49,8 @@ hr {
     border-bottom: 3px solid #efefef;
     transition: border-bottom 0.4s ease; }
   .droplink img:hover {
-    border-bottom: 3px solid #bb2e2b; }
+    border-bottom: 3px solid #bb2e2b;
+    cursor: pointer; }
   .droplink ul {
     display: none; }
   .droplink ul li {
@@ -66,7 +67,7 @@ hr {
     width: auto;
     min-width: 100px;
     padding: 0 20px; }
-  .droplink a:hover + .hidden, .droplink .hidden:hover {
+  .droplink div:hover + .hidden, .droplink .hidden:hover {
     display: block; }
 
 .doublewolf {
