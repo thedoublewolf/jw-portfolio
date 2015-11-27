@@ -5,6 +5,11 @@ hr {
   opacity: 0.2;
   width: 50%; }
 
+h3 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  color: #8e8e8e; }
+
 .container {
   margin: 0 auto;
   width: 100%;
@@ -158,6 +163,44 @@ ul {
   background: url(../images/webdev_bg.png);
   border: 15px solid #fcfcfc;
   box-shadow: 0px 0px 5px #fcfcfc; }
+
+.tiles {
+  position: relative;
+  margin: 0 auto;
+  width: 900px;
+  z-index: -1; }
+
+.web-tile {
+  margin: 0;
+  width: 300px;
+  height: 300px;
+  float: left;
+  z-index: -1; }
+
+.battle-tile:hover {
+  background: url(../images/battlefortheunderworld.gif);
+  opacity: 0.8;
+  background-position: center; }
+
+.artwork-tile:hover {
+  background: url(../images/artwork.gif);
+  opacity: 0.8;
+  background-position: left; }
+
+.etsy-tile:hover {
+  background: url(../images/etsythegathering.gif);
+  opacity: 0.8;
+  background-position: right; }
+
+.favbands-tile:hover {
+  background: url(../images/Favorite-Bands.gif);
+  opacity: 0.8;
+  background-position: none; }
+
+.instanoir-tile:hover {
+  background: url(../images/InstaNoir.gif);
+  opacity: 0.8;
+  background-position: center; }
 
 .background {
   position: relative;
