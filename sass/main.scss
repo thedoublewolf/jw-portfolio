@@ -30,8 +30,6 @@ h3 {
   height: 100px;
   background-color: lighten(#DBDBDB, 8%);
   margin-top: 0;
-  // overflow: hidden;
-  // text-align: right;
 }
 
 .left {
@@ -51,9 +49,9 @@ h3 {
   display: inline-block;
   float: left;
   img {
-   width: 100px;
-   border-bottom: 3px solid lighten(#DBDBDB, 8%);
-   transition: border-bottom 0.4s ease;
+    width: 100px;
+    border-bottom: 3px solid lighten(#DBDBDB, 8%);
+    transition: border-bottom 0.4s ease;
   }
   img:hover {
     border-bottom: 3px solid lighten(#9A2623, 8%);
@@ -64,9 +62,9 @@ h3 {
   display: inline-block;
   float: left;
   img {
-   width: 100px;
-   border-bottom: 3px solid lighten(#DBDBDB, 8%);
-   transition: border-bottom 0.4s ease;
+    width: 100px;
+    border-bottom: 3px solid lighten(#DBDBDB, 8%);
+    transition: border-bottom 0.4s ease;
   }
   img:hover {
     border-bottom: 3px solid lighten(#9A2623, 8%);
@@ -74,6 +72,9 @@ h3 {
   }
   ul {
     display: none;
+    width: 100px;
+    position: absolute;
+    z-index: 2;
   }
   ul li {
     display: block;
@@ -177,9 +178,6 @@ ul {
   transition: border 0.4s ease;
   display: inline-block;
   text-align: left;
-  // background: url(../images/visualart.png);
-  // background-repeat: no-repeat;
-  // background-position: 20px 40px;
   img {
     padding-top: 40px;
     padding-left: 20px;
@@ -199,9 +197,6 @@ ul {
   transition: border 0.4s ease;
   display: inline-block;
   text-align: left;
-  // background: url(../images/webdev.png);
-  // background-repeat: no-repeat;
-  // background-position: 20px 40px;
   img {
     padding-top: 40px;
     padding-left: 20px;
@@ -221,51 +216,82 @@ ul {
 }
 
 .web-tile {
-  margin: 0;
   width: 300px;
-  height: 300px;
+  height: 175px;
   float: left;
   z-index: -1;
 }
 .battle-tile {
-
+  background: url(../images/still_battlefortheunderworld.jpg);
+  background-size: 300px;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.8;
 }
 .battle-tile:hover {
   background: url(../images/battlefortheunderworld.gif);
-  opacity: 0.8;
+  background-size: 300px;
+  background-repeat: no-repeat;
   background-position: center;
+  opacity: 1;
+  
 }
 .artwork-tile {
-
+  background: url(../images/still_artwork.jpg);
+  background-size: 300px;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.8;
 }
 .artwork-tile:hover {
   background: url(../images/artwork.gif);
-  opacity: 0.8;
-  background-position: left;
+  background-size: 300px;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 1;
 }
 .etsy-tile {
-
+  background: url(../images/still_etsythegathering.jpg);
+  background-size: 300px;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.8;
 }
 .etsy-tile:hover {
   background: url(../images/etsythegathering.gif);
-  opacity: 0.8;
-  background-position: right;
+  background-size: 300px;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 1;
 }
 .favbands-tile {
-
+  background: url(../images/still_Favorite-Bands.jpg);
+  background-size: 300px;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.8;
 }
 .favbands-tile:hover {
   background: url(../images/Favorite-Bands.gif);
-  opacity: 0.8;
-  background-position: none;
+  background-size: 300px;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 1;
 }
 .instanoir-tile {
-  
+  background: url(../images/still_InstaNoir.jpg);
+  background-size: 300px;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.8;
+
 }
 .instanoir-tile:hover {
   background: url(../images/InstaNoir.gif);
-  opacity: 0.8;
+  background-size: 300px;
+  background-repeat: no-repeat;
   background-position: center;
+  opacity: 1;
 }
 
 .background {
@@ -273,7 +299,7 @@ ul {
   min-width: 900px;
   max-width: 1000px;
   margin: 0 auto;
-  z-index: -1;
+  // z-index: -1;
 }
 
 .aboutimage {

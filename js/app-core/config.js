@@ -9,7 +9,6 @@ let config = function($stateProvider, $urlRouterProvider) {
     })
     .state('root.home', {
       url: '/',
-      // controller: 'HomeController as vm',
       templateUrl: 'templates/app-layout/home.tpl.html'
     }) 
     .state('root.art-portfolio', {
@@ -20,14 +19,28 @@ let config = function($stateProvider, $urlRouterProvider) {
       url: '/web-portfolio',
       templateUrl: 'templates/app-content/web-portfolio.tpl.html'
     })
-    // .state('root.singlePage', {
-    //   url:'/portfolio/:id',
-    //   controller: 'SinglePageController as vm',
-    //   templateUrl: 'templates/app-content/single-page.tpl.html'
-    // })
+    .state('root.web-portfolio/battle', {
+      url: '/web-portfolio/battle',
+      templateUrl: 'templates/app-content/web-portfolio/battle.tpl.html'
+    })
+    .state('root.web-portfolio/artwork', {
+      url: '/web-portfolio/artwork',
+      templateUrl: 'templates/app-content/web-portfolio/artwork.tpl.html'
+    })
+    .state('root.web-portfolio/etsy', {
+      url: '/web-portfolio/etsy',
+      templateUrl: 'templates/app-content/web-portfolio/etsy.tpl.html'
+    })
+    .state('root.web-portfolio/favbands', {
+      url: '/web-portfolio/favbands',
+      templateUrl: 'templates/app-content/web-portfolio/favbands.tpl.html'
+    })
+    .state('root.web-portfolio/instanoir', {
+      url: '/web-portfolio/instanoir',
+      templateUrl: 'templates/app-content/web-portfolio/instanoir.tpl.html'
+    })
     .state('root.art-about', {
       url: '/art-about',
-      // controller: 'AboutController as vm',
       templateUrl: 'templates/app-content/art-about.tpl.html'
     })
     .state('root.web-about', {
@@ -36,7 +49,6 @@ let config = function($stateProvider, $urlRouterProvider) {
     })
     .state('root.contact', {
       url: '/contact',
-      // controller: 'ContactController as vm',
       templateUrl: 'templates/app-content/contact.tpl.html'
     });
 

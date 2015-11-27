@@ -57,7 +57,10 @@ h3 {
     border-bottom: 3px solid #bb2e2b;
     cursor: pointer; }
   .droplink ul {
-    display: none; }
+    display: none;
+    width: 100px;
+    position: absolute;
+    z-index: 2; }
   .droplink ul li {
     display: block;
     float: none;
@@ -171,43 +174,86 @@ ul {
   z-index: -1; }
 
 .web-tile {
-  margin: 0;
   width: 300px;
-  height: 300px;
+  height: 175px;
   float: left;
   z-index: -1; }
 
+.battle-tile {
+  background: url(../images/still_battlefortheunderworld.jpg);
+  background-size: 300px;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.8; }
+
 .battle-tile:hover {
   background: url(../images/battlefortheunderworld.gif);
-  opacity: 0.8;
-  background-position: center; }
+  background-size: 300px;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 1; }
+
+.artwork-tile {
+  background: url(../images/still_artwork.jpg);
+  background-size: 300px;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.8; }
 
 .artwork-tile:hover {
   background: url(../images/artwork.gif);
-  opacity: 0.8;
-  background-position: left; }
+  background-size: 300px;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 1; }
+
+.etsy-tile {
+  background: url(../images/still_etsythegathering.jpg);
+  background-size: 300px;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.8; }
 
 .etsy-tile:hover {
   background: url(../images/etsythegathering.gif);
-  opacity: 0.8;
-  background-position: right; }
+  background-size: 300px;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 1; }
+
+.favbands-tile {
+  background: url(../images/still_Favorite-Bands.jpg);
+  background-size: 300px;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.8; }
 
 .favbands-tile:hover {
   background: url(../images/Favorite-Bands.gif);
-  opacity: 0.8;
-  background-position: none; }
+  background-size: 300px;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 1; }
+
+.instanoir-tile {
+  background: url(../images/still_InstaNoir.jpg);
+  background-size: 300px;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.8; }
 
 .instanoir-tile:hover {
   background: url(../images/InstaNoir.gif);
-  opacity: 0.8;
-  background-position: center; }
+  background-size: 300px;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 1; }
 
 .background {
   position: relative;
   min-width: 900px;
   max-width: 1000px;
-  margin: 0 auto;
-  z-index: -1; }
+  margin: 0 auto; }
 
 .aboutimage {
   width: 100%; }
