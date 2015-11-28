@@ -9,7 +9,6 @@ hr {
 }
 
 h3 {
-  // text-align: left;
   font-family: 'Lato', sans-serif;
   font-weight: 300;
   color: lighten(#7A7A7A, 8%);
@@ -137,6 +136,8 @@ ul {
   background: url(../images/texture.png);
   min-width: 900px;
   max-width: 100%;
+  padding-left: 10px;
+  padding-left: 10px;
   height: 300px;
   .socialblock {
     padding-top: 80px;
@@ -208,18 +209,33 @@ ul {
   box-shadow: 0px 0px 5px lighten(#EFEFEF, 5%);
 }
 
-.tiles {
+.art-tiles {
   position: relative;
   margin: 0 auto;
   width: 900px;
-  z-index: -1;
+}
+
+.art-tile {
+  width: 220px;
+  height: 167px;
+  float: left;
+  overflow: hidden;
+}
+
+.art-image {
+  width: 300px;
+}
+
+.web-tiles {
+  position: relative;
+  margin: 0 auto;
+  width: 900px;
 }
 
 .web-tile {
   width: 300px;
-  height: 175px;
+  height: 190px;
   float: left;
-  z-index: -1;
 }
 .battle-tile {
   background: url(../images/still_battlefortheunderworld.jpg);
