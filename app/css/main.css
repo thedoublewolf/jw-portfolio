@@ -197,7 +197,12 @@ ul {
     margin: 10px;
     display: inline-block;
     vertical-align: top;
-    text-align: left; }
+    text-align: left;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    color: #7A7A7A; }
+    .single-view div span {
+      padding-right: 10px; }
 
 .web-tiles {
   position: relative;

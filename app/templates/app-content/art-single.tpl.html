@@ -4,7 +4,7 @@
   </div>
   <div>
     <h3>{{ vm.art.title }}</h3>
-    <span>{{ vm.art.medium }}</span>, <span>{{ vm.art.size }}</span>
+    <span><i>{{ vm.art.medium.join(', ') }}</i></span><span>{{ vm.art.size }}</span>
     <p>{{ vm.art.yearCreated }}</p>
   </div>
 </section>
