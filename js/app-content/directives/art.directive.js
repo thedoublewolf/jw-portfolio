@@ -1,4 +1,4 @@
-let artItem = function(ArtPortfolioService) {
+let artItem = function($state, ArtPortfolioService) {
   
   return {
     restrict: 'AE',
@@ -7,14 +7,22 @@ let artItem = function(ArtPortfolioService) {
       art: "=art"
     },
     template: `
-      <div class="art-tile">
+      <div class="art-tile" ng-click="vm.clicked(art)">
         <img class="art-image" ng-src="{{ art.imageUrl }}">
       </div>
     `,
+    controller: 'ArtPortfolioController as vm',
+    link: function (scope, element, attrs) {
+      element.on('click', function () {
+        $state.go('root.singleArt', {
+          id: scope.art.objectId
+        });
+      });
+    }
   };
 
 };
 
-artItem.$inject = ['ArtPortfolioService'];
+artItem.$inject = ['$state', 'ArtPortfolioService'];
 
 export default artItem;

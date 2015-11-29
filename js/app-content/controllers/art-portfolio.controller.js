@@ -3,14 +3,18 @@ let ArtPortfolioController = function(ArtPortfolioService) {
   let vm = this;
 
   vm.art = [];
+  vm.clicked = clicked;
 
   activate();
 
   function activate () {
     ArtPortfolioService.getAllArt().then( (res) => {
       vm.art = res.data.results;
-      console.log(res);
     });
+  }
+
+  function clicked (art) {
+    console.log('clicked', art.title);
   }
 
 };

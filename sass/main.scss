@@ -50,7 +50,7 @@ h3 {
   img {
     width: 100px;
     border-bottom: 3px solid lighten(#DBDBDB, 8%);
-    transition: border-bottom 0.4s ease;
+    transition: border-bottom 0.2s ease;
   }
   img:hover {
     border-bottom: 3px solid lighten(#9A2623, 8%);
@@ -63,7 +63,7 @@ h3 {
   img {
     width: 100px;
     border-bottom: 3px solid lighten(#DBDBDB, 8%);
-    transition: border-bottom 0.4s ease;
+    transition: border-bottom 0.2s ease;
   }
   img:hover {
     border-bottom: 3px solid lighten(#9A2623, 8%);
@@ -154,7 +154,7 @@ ul {
   }
   i {
     padding: 5px;
-    transition: color 0.4s ease;
+    transition: color 0.2s ease;
   }
   i:hover {
     color: lighten(#EFEFEF, 30%);
@@ -176,7 +176,7 @@ ul {
   width: 350px;
   height: 450px;
   border: 15px solid #EFEFEF;
-  transition: border 0.4s ease;
+  transition: border 0.2s ease;
   display: inline-block;
   text-align: left;
   img {
@@ -195,7 +195,7 @@ ul {
   width: 350px;
   height: 450px;
   border: 15px solid #EFEFEF;
-  transition: border 0.4s ease;
+  transition: border 0.2s ease;
   display: inline-block;
   text-align: left;
   img {
@@ -220,10 +220,33 @@ ul {
   height: 167px;
   float: left;
   overflow: hidden;
+  background: white;
 }
 
 .art-image {
   width: 300px;
+  opacity: 1;
+  transition: opacity 0.2s ease;
+}
+.art-image:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.single-view {
+  margin: 50px auto;
+  width: 900px;
+  div {
+    margin: 10px;
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+  }
+}
+
+.single-art {
+  // background: white;
+  // width: 900px;
 }
 
 .web-tiles {
@@ -236,6 +259,7 @@ ul {
   width: 300px;
   height: 190px;
   float: left;
+  background: white;
 }
 .battle-tile {
   background: url(../images/still_battlefortheunderworld.jpg);
@@ -243,6 +267,7 @@ ul {
   background-repeat: no-repeat;
   background-position: center;
   opacity: 0.8;
+  transition: opacity 0.2s ease;
 }
 .battle-tile:hover {
   background: url(../images/battlefortheunderworld.gif);

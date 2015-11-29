@@ -42,7 +42,7 @@ h3 {
   .textlink img {
     width: 100px;
     border-bottom: 3px solid #efefef;
-    transition: border-bottom 0.4s ease; }
+    transition: border-bottom 0.2s ease; }
   .textlink img:hover {
     border-bottom: 3px solid #bb2e2b; }
 
@@ -52,7 +52,7 @@ h3 {
   .droplink img {
     width: 100px;
     border-bottom: 3px solid #efefef;
-    transition: border-bottom 0.4s ease; }
+    transition: border-bottom 0.2s ease; }
   .droplink img:hover {
     border-bottom: 3px solid #bb2e2b;
     cursor: pointer; }
@@ -124,7 +124,7 @@ ul {
     font-size: 1.1em; }
   .info i {
     padding: 5px;
-    transition: color 0.4s ease; }
+    transition: color 0.2s ease; }
   .info i:hover {
     color: white; }
   .info .info_location {
@@ -140,7 +140,7 @@ ul {
   width: 350px;
   height: 450px;
   border: 15px solid #EFEFEF;
-  transition: border 0.4s ease;
+  transition: border 0.2s ease;
   display: inline-block;
   text-align: left; }
   .art img {
@@ -157,7 +157,7 @@ ul {
   width: 350px;
   height: 450px;
   border: 15px solid #EFEFEF;
-  transition: border 0.4s ease;
+  transition: border 0.2s ease;
   display: inline-block;
   text-align: left; }
   .web img {
@@ -178,10 +178,26 @@ ul {
   width: 220px;
   height: 167px;
   float: left;
-  overflow: hidden; }
+  overflow: hidden;
+  background: white; }
 
 .art-image {
-  width: 300px; }
+  width: 300px;
+  opacity: 1;
+  transition: opacity 0.2s ease; }
+
+.art-image:hover {
+  opacity: 0.5;
+  cursor: pointer; }
+
+.single-view {
+  margin: 50px auto;
+  width: 900px; }
+  .single-view div {
+    margin: 10px;
+    display: inline-block;
+    vertical-align: top;
+    text-align: left; }
 
 .web-tiles {
   position: relative;
@@ -191,14 +207,16 @@ ul {
 .web-tile {
   width: 300px;
   height: 190px;
-  float: left; }
+  float: left;
+  background: white; }
 
 .battle-tile {
   background: url(../images/still_battlefortheunderworld.jpg);
   background-size: 300px;
   background-repeat: no-repeat;
   background-position: center;
-  opacity: 0.8; }
+  opacity: 0.8;
+  transition: opacity 0.2s ease; }
 
 .battle-tile:hover {
   background: url(../images/battlefortheunderworld.gif);

@@ -3,9 +3,14 @@ let ArtPortfolioService = function($http, PARSE) {
   let imageUrl = PARSE.URL + 'classes/Artwork';
 
   this.getAllArt = getAllArt;
+  this.getArt = getArt;
 
   function getAllArt () {
     return $http.get(imageUrl, PARSE.CONFIG);
+  }
+
+  function getArt (id) {
+    return $http.get(imageUrl + '/' + id, PARSE.CONFIG);
   }
 
 };

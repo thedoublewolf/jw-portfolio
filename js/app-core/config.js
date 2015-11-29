@@ -16,6 +16,11 @@ let config = function($stateProvider, $urlRouterProvider) {
       controller: 'ArtPortfolioController as vm',
       templateUrl: 'templates/app-content/art-portfolio.tpl.html'
     })
+    .state('root.singleArt', {
+      url: '/art-portfolio/:id',
+      controller: 'ArtSingleController as vm',
+      templateUrl: 'templates/app-content/art-single.tpl.html'
+    })
     .state('root.web-portfolio', {
       url: '/web-portfolio',
       templateUrl: 'templates/app-content/web-portfolio.tpl.html'
