@@ -1,6 +1,6 @@
 body {
-  // background: #232323;
-  background: #DBDBDB;
+  background: #232323;
+  // background: #DBDBDB;
 }
 
 hr {
@@ -8,7 +8,13 @@ hr {
   width: 50%;
 }
 
+h2 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  color: lighten(#7A7A7A, 8%);
+}
 h3 {
+  margin-top: 0;
   font-family: 'Lato', sans-serif;
   font-weight: 300;
   color: lighten(#7A7A7A, 8%);
@@ -98,7 +104,6 @@ h3 {
 }
 
 .doublewolf {
-  opacity: 0.7;
   img {
     width: 75px;
   }
@@ -107,7 +112,7 @@ h3 {
 .jonnywarren {
   width: 75%;
   margin-bottom: 5px;
-  margin-left: -25px;
+  margin-left: -10px;
 }
 
 ul {
@@ -176,7 +181,8 @@ ul {
   width: 350px;
   height: 450px;
   border: 15px solid #EFEFEF;
-  transition: border 0.2s ease;
+  background: #232323;
+  transition: background 0.5s ease;
   display: inline-block;
   text-align: left;
   img {
@@ -187,7 +193,7 @@ ul {
 .art:hover {
   background: url(../images/visualart_bg.png);
   border: 15px solid lighten(#EFEFEF, 5%);
-  box-shadow: 0px 0px 5px lighten(#EFEFEF, 5%);
+  // box-shadow: 0px 0px 5px lighten(#EFEFEF, 5%);
 }
 
 .web {
@@ -195,7 +201,8 @@ ul {
   width: 350px;
   height: 450px;
   border: 15px solid #EFEFEF;
-  transition: border 0.2s ease;
+  background: #232323;
+  transition: background 0.5s ease;
   display: inline-block;
   text-align: left;
   img {
@@ -206,19 +213,20 @@ ul {
 .web:hover {
   background: url(../images/webdev_bg.png);
   border: 15px solid lighten(#EFEFEF, 5%);
-  box-shadow: 0px 0px 5px lighten(#EFEFEF, 5%);
+  // box-shadow: 0px 0px 5px lighten(#EFEFEF, 5%);
 }
 
 .art-tiles {
   position: relative;
   margin: 0 auto;
-  width: 900px;
+  width: 1000px;
 }
 
 .art-tile {
   width: 220px;
   height: 167px;
   float: left;
+  margin: 10px;
   overflow: hidden;
   background: white;
 }
@@ -235,7 +243,7 @@ ul {
 
 .single-view {
   margin: 50px auto;
-  width: 900px;
+  width: 1000px;
   div {
     margin: 10px;
     display: inline-block;
@@ -248,6 +256,23 @@ ul {
       padding-right: 10px;
     }
   }
+  a {
+    text-decoration: none;
+    color: lighten(#7A7A7A, 10%);
+  }
+  a:hover {
+    color: white;
+  }
+  .desc {
+    width: 400px;
+  }
+  .desc-hr {
+    margin-left: 0;
+  }
+  .desc-link {
+    color: lighten(#7A7A7A, 10%);
+    font-weight: 400;
+  }
 }
 
 .single-art {
@@ -258,13 +283,14 @@ ul {
 .web-tiles {
   position: relative;
   margin: 0 auto;
-  width: 900px;
+  width: 1000px;
 }
 
 .web-tile {
   width: 300px;
   height: 190px;
   float: left;
+  margin: 10px;
   background: white;
 }
 .battle-tile {
@@ -272,65 +298,76 @@ ul {
   background-size: 300px;
   background-repeat: no-repeat;
   background-position: center;
-  opacity: 0.8;
-  transition: opacity 0.2s ease;
+  // opacity: 1;
 }
 .battle-tile:hover {
   background: url(../images/battlefortheunderworld.gif);
   background-size: 300px;
   background-repeat: no-repeat;
   background-position: center;
-  opacity: 1;
-  
+  // opacity: 1;
+}
+.sketchcloud-tile {
+  background: url(../images/still_sketchcloud.jpg);
+  background-size: 300px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.sketchcloud-tile:hover {
+  background: url(../images/sketchcloud.gif);
+  background-size: 300px;
+  background-repeat: no-repeat;
+  background-position: center;
+  // opacity: 1;
 }
 .artwork-tile {
   background: url(../images/still_artwork.jpg);
   background-size: 300px;
   background-repeat: no-repeat;
   background-position: center;
-  opacity: 0.8;
+  // opacity: 0.8;
 }
 .artwork-tile:hover {
   background: url(../images/artwork.gif);
   background-size: 300px;
   background-repeat: no-repeat;
   background-position: center;
-  opacity: 1;
+  // opacity: 1;
 }
 .etsy-tile {
   background: url(../images/still_etsythegathering.jpg);
   background-size: 300px;
   background-repeat: no-repeat;
   background-position: center;
-  opacity: 0.8;
+  // opacity: 0.8;
 }
 .etsy-tile:hover {
   background: url(../images/etsythegathering.gif);
   background-size: 300px;
   background-repeat: no-repeat;
   background-position: center;
-  opacity: 1;
+  // opacity: 1;
 }
 .favbands-tile {
   background: url(../images/still_Favorite-Bands.jpg);
   background-size: 300px;
   background-repeat: no-repeat;
   background-position: center;
-  opacity: 0.8;
+  // opacity: 0.8;
 }
 .favbands-tile:hover {
   background: url(../images/Favorite-Bands.gif);
   background-size: 300px;
   background-repeat: no-repeat;
   background-position: center;
-  opacity: 1;
+  // opacity: 1;
 }
 .instanoir-tile {
   background: url(../images/still_InstaNoir.jpg);
   background-size: 300px;
   background-repeat: no-repeat;
   background-position: center;
-  opacity: 0.8;
+  // opacity: 0.8;
 
 }
 .instanoir-tile:hover {
@@ -338,7 +375,7 @@ ul {
   background-size: 300px;
   background-repeat: no-repeat;
   background-position: center;
-  opacity: 1;
+  // opacity: 1;
 }
 
 .background {
@@ -346,7 +383,6 @@ ul {
   min-width: 900px;
   max-width: 1000px;
   margin: 0 auto;
-  // z-index: -1;
 }
 
 .aboutimage {

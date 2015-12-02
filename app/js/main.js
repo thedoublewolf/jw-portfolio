@@ -170,6 +170,9 @@ var config = function config($stateProvider, $urlRouterProvider) {
   }).state('root.web-portfolio/battle', {
     url: '/web-portfolio/battle',
     templateUrl: 'templates/app-content/web-portfolio/battle.tpl.html'
+  }).state('root.web-portfolio/sketchcloud', {
+    url: '/web-portfolio/sketchcloud',
+    templateUrl: 'templates/app-content/web-portfolio/sketchcloud.tpl.html'
   }).state('root.web-portfolio/artwork', {
     url: '/web-portfolio/artwork',
     templateUrl: 'templates/app-content/web-portfolio/artwork.tpl.html'

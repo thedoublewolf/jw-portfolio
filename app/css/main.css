@@ -1,11 +1,17 @@
 body {
-  background: #DBDBDB; }
+  background: #232323; }
 
 hr {
   opacity: 0.2;
   width: 50%; }
 
+h2 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  color: #8e8e8e; }
+
 h3 {
+  margin-top: 0;
   font-family: 'Lato', sans-serif;
   font-weight: 300;
   color: #8e8e8e; }
@@ -78,15 +84,13 @@ h3 {
   .droplink div:hover + .hidden, .droplink .hidden:hover {
     display: block; }
 
-.doublewolf {
-  opacity: 0.7; }
-  .doublewolf img {
-    width: 75px; }
+.doublewolf img {
+  width: 75px; }
 
 .jonnywarren {
   width: 75%;
   margin-bottom: 5px;
-  margin-left: -25px; }
+  margin-left: -10px; }
 
 ul {
   list-style: none;
@@ -140,7 +144,8 @@ ul {
   width: 350px;
   height: 450px;
   border: 15px solid #EFEFEF;
-  transition: border 0.2s ease;
+  background: #232323;
+  transition: background 0.5s ease;
   display: inline-block;
   text-align: left; }
   .art img {
@@ -149,15 +154,15 @@ ul {
 
 .art:hover {
   background: url(../images/visualart_bg.png);
-  border: 15px solid #fcfcfc;
-  box-shadow: 0px 0px 5px #fcfcfc; }
+  border: 15px solid #fcfcfc; }
 
 .web {
   margin-left: 20px;
   width: 350px;
   height: 450px;
   border: 15px solid #EFEFEF;
-  transition: border 0.2s ease;
+  background: #232323;
+  transition: background 0.5s ease;
   display: inline-block;
   text-align: left; }
   .web img {
@@ -166,18 +171,18 @@ ul {
 
 .web:hover {
   background: url(../images/webdev_bg.png);
-  border: 15px solid #fcfcfc;
-  box-shadow: 0px 0px 5px #fcfcfc; }
+  border: 15px solid #fcfcfc; }
 
 .art-tiles {
   position: relative;
   margin: 0 auto;
-  width: 900px; }
+  width: 1000px; }
 
 .art-tile {
   width: 220px;
   height: 167px;
   float: left;
+  margin: 10px;
   overflow: hidden;
   background: white; }
 
@@ -192,7 +197,7 @@ ul {
 
 .single-view {
   margin: 50px auto;
-  width: 900px; }
+  width: 1000px; }
   .single-view div {
     margin: 10px;
     display: inline-block;
@@ -203,88 +208,102 @@ ul {
     color: #7A7A7A; }
     .single-view div span {
       padding-right: 10px; }
+  .single-view a {
+    text-decoration: none;
+    color: #949494; }
+  .single-view a:hover {
+    color: white; }
+  .single-view .desc {
+    width: 400px; }
+  .single-view .desc-hr {
+    margin-left: 0; }
+  .single-view .desc-link {
+    color: #949494;
+    font-weight: 400; }
 
 .web-tiles {
   position: relative;
   margin: 0 auto;
-  width: 900px; }
+  width: 1000px; }
 
 .web-tile {
   width: 300px;
   height: 190px;
   float: left;
+  margin: 10px;
   background: white; }
 
 .battle-tile {
   background: url(../images/still_battlefortheunderworld.jpg);
   background-size: 300px;
   background-repeat: no-repeat;
-  background-position: center;
-  opacity: 0.8;
-  transition: opacity 0.2s ease; }
+  background-position: center; }
 
 .battle-tile:hover {
   background: url(../images/battlefortheunderworld.gif);
   background-size: 300px;
   background-repeat: no-repeat;
-  background-position: center;
-  opacity: 1; }
+  background-position: center; }
+
+.sketchcloud-tile {
+  background: url(../images/still_sketchcloud.jpg);
+  background-size: 300px;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.sketchcloud-tile:hover {
+  background: url(../images/sketchcloud.gif);
+  background-size: 300px;
+  background-repeat: no-repeat;
+  background-position: center; }
 
 .artwork-tile {
   background: url(../images/still_artwork.jpg);
   background-size: 300px;
   background-repeat: no-repeat;
-  background-position: center;
-  opacity: 0.8; }
+  background-position: center; }
 
 .artwork-tile:hover {
   background: url(../images/artwork.gif);
   background-size: 300px;
   background-repeat: no-repeat;
-  background-position: center;
-  opacity: 1; }
+  background-position: center; }
 
 .etsy-tile {
   background: url(../images/still_etsythegathering.jpg);
   background-size: 300px;
   background-repeat: no-repeat;
-  background-position: center;
-  opacity: 0.8; }
+  background-position: center; }
 
 .etsy-tile:hover {
   background: url(../images/etsythegathering.gif);
   background-size: 300px;
   background-repeat: no-repeat;
-  background-position: center;
-  opacity: 1; }
+  background-position: center; }
 
 .favbands-tile {
   background: url(../images/still_Favorite-Bands.jpg);
   background-size: 300px;
   background-repeat: no-repeat;
-  background-position: center;
-  opacity: 0.8; }
+  background-position: center; }
 
 .favbands-tile:hover {
   background: url(../images/Favorite-Bands.gif);
   background-size: 300px;
   background-repeat: no-repeat;
-  background-position: center;
-  opacity: 1; }
+  background-position: center; }
 
 .instanoir-tile {
   background: url(../images/still_InstaNoir.jpg);
   background-size: 300px;
   background-repeat: no-repeat;
-  background-position: center;
-  opacity: 0.8; }
+  background-position: center; }
 
 .instanoir-tile:hover {
   background: url(../images/InstaNoir.gif);
   background-size: 300px;
   background-repeat: no-repeat;
-  background-position: center;
-  opacity: 1; }
+  background-position: center; }
 
 .background {
   position: relative;
