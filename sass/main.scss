@@ -231,6 +231,18 @@ ul {
   background: white;
 }
 
+.more-art {
+  background: url(../images/button_moreart.png);
+  background-size: 220px;
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: hidden;
+  transition: background-size 0.2s ease;
+}
+.more-art:hover {
+  background-size: 240px;
+}
+
 .art-image {
   width: 300px;
   opacity: 1;
@@ -273,6 +285,12 @@ ul {
     color: lighten(#7A7A7A, 10%);
     font-weight: 400;
   }
+  .images {
+    width: 500px;
+  }
+  img {
+    width: 500px;
+  }
 }
 
 .single-art {
@@ -293,19 +311,29 @@ ul {
   margin: 10px;
   background: white;
 }
+.abstract-tile {
+  background: url(../images/still_abstract.jpg);
+  background-size: 300px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.ohawk-tile {
+  background: url(../images/still_officehawk.jpg);
+  background-size: 300px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
 .battle-tile {
   background: url(../images/still_battlefortheunderworld.jpg);
   background-size: 300px;
   background-repeat: no-repeat;
   background-position: center;
-  // opacity: 1;
 }
 .battle-tile:hover {
   background: url(../images/battlefortheunderworld.gif);
   background-size: 300px;
   background-repeat: no-repeat;
   background-position: center;
-  // opacity: 1;
 }
 .sketchcloud-tile {
   background: url(../images/still_sketchcloud.jpg);
@@ -318,56 +346,48 @@ ul {
   background-size: 300px;
   background-repeat: no-repeat;
   background-position: center;
-  // opacity: 1;
 }
 .artwork-tile {
   background: url(../images/still_artwork.jpg);
   background-size: 300px;
   background-repeat: no-repeat;
   background-position: center;
-  // opacity: 0.8;
 }
 .artwork-tile:hover {
   background: url(../images/artwork.gif);
   background-size: 300px;
   background-repeat: no-repeat;
   background-position: center;
-  // opacity: 1;
 }
 .etsy-tile {
   background: url(../images/still_etsythegathering.jpg);
   background-size: 300px;
   background-repeat: no-repeat;
   background-position: center;
-  // opacity: 0.8;
 }
 .etsy-tile:hover {
   background: url(../images/etsythegathering.gif);
   background-size: 300px;
   background-repeat: no-repeat;
   background-position: center;
-  // opacity: 1;
 }
 .favbands-tile {
   background: url(../images/still_Favorite-Bands.jpg);
   background-size: 300px;
   background-repeat: no-repeat;
   background-position: center;
-  // opacity: 0.8;
 }
 .favbands-tile:hover {
   background: url(../images/Favorite-Bands.gif);
   background-size: 300px;
   background-repeat: no-repeat;
   background-position: center;
-  // opacity: 1;
 }
 .instanoir-tile {
   background: url(../images/still_InstaNoir.jpg);
   background-size: 300px;
   background-repeat: no-repeat;
   background-position: center;
-  // opacity: 0.8;
 
 }
 .instanoir-tile:hover {
@@ -375,7 +395,36 @@ ul {
   background-size: 300px;
   background-repeat: no-repeat;
   background-position: center;
-  // opacity: 1;
+}
+.github-tile {
+  background: url(../images/button_github.png);
+  background-size: 300px;
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: hidden;
+  transition: background-size 0.2s ease;
+}
+.github-tile:hover {
+  background-size: 320px;
+}
+
+.art-about {
+  width: 50%;
+  margin: 0 auto;
+  text-align: left;
+  margin-bottom: 50px;
+  h3 {
+    margin: 10px;
+  }
+  .art-cv {
+    font-weight: 300;
+    color: lighten(#7A7A7A, 8%);
+    margin-left: 20px;
+    li {
+      padding: 5px;
+      display: block;
+    }
+  }
 }
 
 .background {

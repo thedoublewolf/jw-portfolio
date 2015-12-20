@@ -25,6 +25,14 @@ let config = function($stateProvider, $urlRouterProvider) {
       url: '/web-portfolio',
       templateUrl: 'templates/app-content/web-portfolio.tpl.html'
     })
+    .state('root.web-portfolio/abstract', {
+      url: '/web-portfolio/abstract',
+      templateUrl: 'templates/app-content/web-portfolio/abstract.tpl.html'
+    })
+    .state('root.web-portfolio/ohawk', {
+      url: '/web-portfolio/ohawk',
+      templateUrl: 'templates/app-content/web-portfolio/ohawk.tpl.html'
+    })
     .state('root.web-portfolio/battle', {
       url: '/web-portfolio/battle',
       templateUrl: 'templates/app-content/web-portfolio/battle.tpl.html'

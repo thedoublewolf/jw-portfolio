@@ -186,6 +186,17 @@ ul {
   overflow: hidden;
   background: white; }
 
+.more-art {
+  background: url(../images/button_moreart.png);
+  background-size: 220px;
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: hidden;
+  transition: background-size 0.2s ease; }
+
+.more-art:hover {
+  background-size: 240px; }
+
 .art-image {
   width: 300px;
   opacity: 1;
@@ -220,6 +231,10 @@ ul {
   .single-view .desc-link {
     color: #949494;
     font-weight: 400; }
+  .single-view .images {
+    width: 500px; }
+  .single-view img {
+    width: 500px; }
 
 .web-tiles {
   position: relative;
@@ -232,6 +247,18 @@ ul {
   float: left;
   margin: 10px;
   background: white; }
+
+.abstract-tile {
+  background: url(../images/still_abstract.jpg);
+  background-size: 300px;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.ohawk-tile {
+  background: url(../images/still_officehawk.jpg);
+  background-size: 300px;
+  background-repeat: no-repeat;
+  background-position: center; }
 
 .battle-tile {
   background: url(../images/still_battlefortheunderworld.jpg);
@@ -304,6 +331,32 @@ ul {
   background-size: 300px;
   background-repeat: no-repeat;
   background-position: center; }
+
+.github-tile {
+  background: url(../images/button_github.png);
+  background-size: 300px;
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: hidden;
+  transition: background-size 0.2s ease; }
+
+.github-tile:hover {
+  background-size: 320px; }
+
+.art-about {
+  width: 50%;
+  margin: 0 auto;
+  text-align: left;
+  margin-bottom: 50px; }
+  .art-about h3 {
+    margin: 10px; }
+  .art-about .art-cv {
+    font-weight: 300;
+    color: #8e8e8e;
+    margin-left: 20px; }
+    .art-about .art-cv li {
+      padding: 5px;
+      display: block; }
 
 .background {
   position: relative;
