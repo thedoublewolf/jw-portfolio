@@ -167,6 +167,9 @@ var config = function config($stateProvider, $urlRouterProvider) {
   }).state('root.web-portfolio', {
     url: '/web-portfolio',
     templateUrl: 'templates/app-content/web-portfolio.tpl.html'
+  }).state('root.web-portfolio/collectiv27', {
+    url: '/web-portfolio/collectiv27',
+    templateUrl: 'templates/app-content/web-portfolio/collectiv27.tpl.html'
   }).state('root.web-portfolio/abstract', {
     url: '/web-portfolio/abstract',
     templateUrl: 'templates/app-content/web-portfolio/abstract.tpl.html'

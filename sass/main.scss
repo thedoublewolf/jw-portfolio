@@ -306,10 +306,16 @@ ul {
 
 .web-tile {
   width: 300px;
-  height: 190px;
+  height: 185px;
   float: left;
   margin: 10px;
   background: white;
+}
+.collectiv-tile {
+  background: url(../images/still_collectiv27.jpg);
+  background-size: 300px;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .abstract-tile {
   background: url(../images/still_abstract.jpg);
