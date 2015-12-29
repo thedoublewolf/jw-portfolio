@@ -419,6 +419,17 @@ ul {
   margin: 0 auto;
   text-align: left;
   margin-bottom: 50px;
+  .art-cred {
+    margin-top: 50px;
+    text-align: center;
+    a {
+      text-decoration: none;
+      color: #7A7A7A;
+    }
+    a:hover {
+      color: white;
+    }
+  }
   h3 {
     margin: 10px;
   }

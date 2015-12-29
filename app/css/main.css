@@ -354,6 +354,14 @@ ul {
   margin: 0 auto;
   text-align: left;
   margin-bottom: 50px; }
+  .art-about .art-cred {
+    margin-top: 50px;
+    text-align: center; }
+    .art-about .art-cred a {
+      text-decoration: none;
+      color: #7A7A7A; }
+    .art-about .art-cred a:hover {
+      color: white; }
   .art-about h3 {
     margin: 10px; }
   .art-about .art-cv {
