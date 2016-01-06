@@ -140,7 +140,7 @@ ul {
     margin-left: 10px; }
 
 .art {
-  margin-right: 20px;
+  margin-left: 20px;
   width: 350px;
   height: 450px;
   border: 15px solid #EFEFEF;
@@ -157,7 +157,7 @@ ul {
   border: 15px solid #fcfcfc; }
 
 .web {
-  margin-left: 20px;
+  margin-right: 20px;
   width: 350px;
   height: 450px;
   border: 15px solid #EFEFEF;
@@ -350,32 +350,29 @@ ul {
   background-size: 320px; }
 
 .art-about {
-  width: 50%;
   margin: 0 auto;
   text-align: left;
-  margin-bottom: 50px; }
-  .art-about .art-cred {
-    margin-top: 50px;
-    text-align: center; }
-    .art-about .art-cred a {
-      text-decoration: none;
-      color: #7A7A7A; }
-    .art-about .art-cred a:hover {
-      color: white; }
+  margin-bottom: 50px;
+  font-weight: 300; }
+  .art-about a {
+    text-decoration: none;
+    color: #7A7A7A; }
+  .art-about a:hover {
+    color: white; }
   .art-about h3 {
-    margin: 10px; }
+    margin-top: 10px;
+    margin-bottom: 5px;
+    color: #DBDBDB; }
   .art-about .art-cv {
-    font-weight: 300;
-    color: #8e8e8e;
-    margin-left: 20px; }
+    color: #DBDBDB; }
     .art-about .art-cv li {
       padding: 5px;
-      display: block; }
+      display: block;
+      font-size: 0.9em; }
 
 .background {
   position: relative;
-  min-width: 900px;
-  max-width: 1000px;
+  width: 1000px;
   margin: 0 auto; }
 
 .aboutimage {
@@ -386,17 +383,17 @@ ul {
   opacity: 0.8;
   color: #DBDBDB;
   width: 400px;
-  height: 400px;
+  height: 760px;
   overflow: scroll;
   position: absolute;
-  bottom: 40px;
+  top: 0;
   margin-left: 20px;
   padding: 20px;
   text-align: left; }
   .aboutme .abouttext {
     font-family: 'Lato', sans-serif;
     font-weight: 300;
-    font-size: 1.2em; }
+    font-size: 1.0em; }
   .aboutme hr {
     border-color: #7A7A7A;
     opacity: 0.1; }

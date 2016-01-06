@@ -177,7 +177,7 @@ ul {
 }
 
 .art {
-  margin-right: 20px;
+  margin-left: 20px;
   width: 350px;
   height: 450px;
   border: 15px solid #EFEFEF;
@@ -197,7 +197,7 @@ ul {
 }
 
 .web {
-  margin-left: 20px;
+  margin-right: 20px;
   width: 350px;
   height: 450px;
   border: 15px solid #EFEFEF;
@@ -415,39 +415,39 @@ ul {
 }
 
 .art-about {
-  width: 50%;
+  // width: 50%;
   margin: 0 auto;
   text-align: left;
   margin-bottom: 50px;
-  .art-cred {
-    margin-top: 50px;
-    text-align: center;
-    a {
-      text-decoration: none;
-      color: #7A7A7A;
-    }
-    a:hover {
-      color: white;
-    }
+  font-weight: 300;
+  a {
+    text-decoration: none;
+    color: #7A7A7A;
+  }
+  a:hover {
+    color: white;
   }
   h3 {
-    margin: 10px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    color: #DBDBDB;
   }
   .art-cv {
-    font-weight: 300;
-    color: lighten(#7A7A7A, 8%);
-    margin-left: 20px;
+    color: #DBDBDB;
+    // margin-left: 20px;
     li {
       padding: 5px;
       display: block;
+      font-size: 0.9em;
     }
   }
 }
 
 .background {
   position: relative;
-  min-width: 900px;
-  max-width: 1000px;
+  // min-width: 900px;
+  // max-width: 1000px;
+  width: 1000px;
   margin: 0 auto;
 }
 
@@ -460,17 +460,18 @@ ul {
   opacity: 0.8;
   color: #DBDBDB;
   width: 400px;
-  height: 400px;
+  height: 760px;
   overflow: scroll;
   position: absolute;
-  bottom: 40px;
+  top: 0;
+  // bottom: 40px;
   margin-left: 20px;
   padding: 20px;
   text-align: left;
   .abouttext {
     font-family: 'Lato', sans-serif;
     font-weight: 300;
-    font-size: 1.2em;
+    font-size: 1.0em;
   }
   hr {
     border-color: #7A7A7A;
