@@ -1,4 +1,6 @@
 let ArtPortfolioController = function(ArtPortfolioService) {
+
+  'use strict';
   
   let vm = this;
 

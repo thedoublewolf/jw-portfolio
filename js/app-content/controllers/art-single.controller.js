@@ -1,4 +1,6 @@
 let ArtSingleController = function(ArtPortfolioService, $stateParams) {
+
+  'use strict';
   
   let vm = this;
 

@@ -1,4 +1,6 @@
 let artItem = function($state, ArtPortfolioService) {
+
+  'use strict';
   
   return {
     restrict: 'AE',

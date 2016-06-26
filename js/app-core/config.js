@@ -1,4 +1,6 @@
 let config = function($stateProvider, $urlRouterProvider) {
+
+  'use strict';
   
   $urlRouterProvider.otherwise('/');
 

@@ -1,4 +1,6 @@
 let ArtPortfolioService = function($http, PARSE) {
+
+  'use strict';
   
   let imageUrl = PARSE.URL + 'classes/Artwork';
 
