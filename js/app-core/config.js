@@ -27,6 +27,10 @@ let config = function($stateProvider, $urlRouterProvider) {
       url: '/web-portfolio',
       templateUrl: 'templates/app-content/web-portfolio.tpl.html'
     })
+    .state('root.web-portfolio/freedombarber', {
+      url: '/web-portfolio/freedombarber',
+      templateUrl: 'templates/app-content/web-portfolio/freedombarber.tpl.html'
+    })
     .state('root.web-portfolio/collectiv27', {
       url: '/web-portfolio/collectiv27',
       templateUrl: 'templates/app-content/web-portfolio/collectiv27.tpl.html'
