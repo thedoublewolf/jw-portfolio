@@ -1,3 +1,5 @@
+'use strict';
+
 var gulp = require('gulp');
 var sourcemaps = require('gulp-sourcemaps');
 var source = require('vinyl-source-stream');
@@ -69,20 +71,6 @@ gulp.task('browserify', function() {
     .pipe(gulp.dest('./app/js'));
 });
 
-// Janky - quick fix to write spec file
-gulp.task('browserify-test', function() {
-  return browserify('./js/tests.js', {debug: true})
-    .transform(babel)
-    .bundle()
-    .on('error', browserifyError)
-    .pipe(source('./tests.js'))
-    .pipe(buffer())
-    .pipe(sourcemaps.init({loadMaps: true}))
-    // .pipe(uglify())
-    .pipe(sourcemaps.write('./'))
-    .pipe(gulp.dest('./spec/'));
-});
-
 gulp.task('style:js', function() {
   return gulp.src('./js/**/*.js')
     .pipe(notifyError())
@@ -117,7 +105,6 @@ gulp.task('watch', function() {
   });
   watch(['./js/**/*.js', './package.json'], function () {
     gulp.start('browserify');
-    gulp.start('browserify-test');
   });
   watch('./app/index.html', function () {
     gulp.start('hint:html');
@@ -139,7 +126,6 @@ gulp.task('default', ['sass',
                       'fonts',
                       'normalize',
                       'lint',
-                      'browserify',
-                      'browserify-test']);
+                      'browserify']);
 
 gulp.task('start', ['default', 'watch', 'server']);
